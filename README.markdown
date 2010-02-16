@@ -22,12 +22,12 @@ Installation
 Usage
 -----
 
-In ``settings.py``, add ``'database_files'`` to your INSTALLED_APPS and add this line::
+In ``settings.py``, add ``'database_files'`` to your INSTALLED_APPS and add this line:
 
     DEFAULT_FILE_STORAGE = 'database_files.storage.DatabaseStorage'
 
 Although the ``upload_to`` argument on ``FileField`` is required, it is not 
-used by ``database_files``. Just set it to a dummy value::
+used by ``database_files``. Just set it to a dummy value:
 
     upload = models.FileField(upload_to='not required')
 
